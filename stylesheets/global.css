@@ -1,0 +1,150 @@
+
+@charset "UTF-8";
+
+/* -----------------------------------------------------------
+
+- Title: UI Developer Test
+- Author: Stella Miranda
+
+Based on Inuit.css (inuitcss.com)
+
+----------------------------------------------------------- */
+
+/* Reset
+============================================================ */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}body{line-height:1;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}audio:not([controls]){display:none;}[hidden]{display:none;}html{font-size:100%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}nav ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}a{font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}ins{background-color:#ff9;color:#000;text-decoration:none;}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700;}del{text-decoration:line-through;}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help;}table{border-collapse:collapse;border-spacing:0;}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}input,select{vertical-align:middle;}input,textarea,select{font:inherit;}ul{list-style:none;}input:focus,textarea:focus,select:focus{outline: none;}textarea{resize:none;overflow:auto; vertical-align:top;}input,textarea{border:0 none; padding:0;margin:0;}img{border:0;-ms-interpolation-mode:bicubic;} button, input{line-height:normal;*overflow:visible;} button, html input[type="button"], input[type="reset"], input[type="submit"]{cursor:pointer; }input[type="checkbox"], input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner, input::-moz-focus-inner{border:0;padding:0;}select{cursor:pointer;}
+
+*{
+  margin: 0;
+  border:0;
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+	margin: 0 auto;
+}
+
+html{ 
+  background: url(../images/background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Header
+============================================================ */
+
+header{
+	background-color: #215671;
+	height: 50px;
+}
+
+header h1{
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.wrapper{
+	width: 960px;
+	color: #FFF;
+}
+
+/* Content
+============================================================ */
+
+
+.search_content{
+  width: 962px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 75px;
+  background-image: url(../images/field_background.png);
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -100px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 100px; 
+}
+.site-footer {
+  background: #215671;
+  margin: 0 auto;
+}
+
+.wrapper, .search_content{
+	margin: 0 auto;
+}
+
+.site-footer div{
+	margin: 0 auto;
+	width: 610px;
+
+}
+
+.floater	{
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;/* half of #content height*/
+  left: 0;
+  width: 100%;
+}
+
+.button{
+	background-image: url(../images/search_btn.png);
+	width: 164px;
+	height: 56px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.search_textfield{
+	border: 0;
+  outline: 0;
+  background: #FFF;
+  border: 1px solid #215671;
+  width: 770px;
+  height: 55px;
+  margin-top: 10px;
+  margin-left: 10px;
+  -webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #215671;
+	font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+/* Footer
+============================================================ */
+
+footer{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  font-size: 16px;
+}
+
+footer p{
+	position: relative;
+  top: 20px;
+  margin-top: -0px;/* half of #content height*/
+  left: 0;
+}
+
+footer p a{
+	color: #FFF;
+}
