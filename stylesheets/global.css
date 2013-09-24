@@ -40,17 +40,22 @@ html{
 
 header{
 	background-color: #215671;
-	height: 50px;
+	height: 87px;
+}
+
+header.results{
+    margin-bottom: 50px;
 }
 
 header h1{
   font-size: 30px;
-  padding-top: 10px;
+  padding-top: 17px;
 }
 
 .wrapper{
 	width: 960px;
-	color: #FFF;
+	
+  margin: 0 auto;
 }
 
 /* Content
@@ -65,10 +70,62 @@ header h1{
   background-image: url(../images/field_background.png);
 }
 
+.content {
+  height: 900px;
+}
+
+#search_results {
+  height: 820px;
+}
+.content h2{
+  font-size: 30px;
+  color: #215671;
+  font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  margin-bottom: 20px;
+
+}
+#search_results{
+  background-color: #FFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #215671;
+}
+.item img{
+  margin-left: 30px;
+  margin-bottom: 30px;
+  }
+.item img, ul{
+  float: left;
+  margin-top: 30px;
+  }
+
+  .item ul{
+   margin-left: 20px;
+     font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
+     font-size: 16px;
+  }
+
+    .item ul li{
+    padding-bottom: 20px;
+  }
+
+  .item ul li:first-child{
+     font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
+     font-weight: 100px;
+  }
+
+
+.item {
+  clear: both;
+  height: 190px;
+  border-bottom: 1px solid #dcdcdc;
+  color: #898989;
+}
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -100px; 
+  margin-bottom: -50px; 
 }
 .page-wrap:after {
   content: "";
@@ -145,6 +202,6 @@ footer p{
   left: 0;
 }
 
-footer p a{
+footer , footer p a{
 	color: #FFF;
 }
