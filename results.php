@@ -10,7 +10,7 @@
 	<body>
 		<header class="results">
 			<div class="wrapper">
-				<h1><img src="images/logo.png"></h1>
+				<h1><a href="index.php"><img src="images/logo.png"></a></h1>
 			</div>
 		</header>
 		<div class = "page-wrap">
@@ -64,9 +64,6 @@
 		<footer class="site-footer">
 			<div class="wrapper">
   			<p>Stella Miranda, 2013 - Built using the API from <a href="http://www.themoviedb.org" target="_blank">themoviedb.org</a>, using HTML5 and CSS3.</p>  		</div>
-		</footer>
-	</body>
-</html>edb.org" target="_blank">themoviedb.org</a>, using HTML5 and CSS3.</p>  		</div>
 		</footer>
 	</body>
 </html>
