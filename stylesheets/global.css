@@ -25,6 +25,7 @@ html, body{
 
 body{
 	margin: 0 auto;
+  font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
 
 html{ 
@@ -80,7 +81,6 @@ header h1{
 .content h2{
   font-size: 30px;
   color: #215671;
-  font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif; 
   margin-bottom: 20px;
 
 }
@@ -100,20 +100,19 @@ header h1{
   margin-top: 30px;
   }
 
-  .item ul{
-   margin-left: 20px;
-     font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
-     font-size: 16px;
-  }
+.item ul{
+  margin-left: 20px;
+  font-size: 16px;
+}
 
-    .item ul li{
-    padding-bottom: 20px;
-  }
+.item ul li{
+  padding-bottom: 20px;
+}
 
-  .item ul li:first-child{
-     font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif;
-     font-weight: 100px;
-  }
+.item ul li:first-child{ 
+  font-weight: 100px;
+  font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
 
 
 .item {
@@ -180,7 +179,6 @@ header h1{
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 	color: #215671;
-	font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
   font-size: 18px;
   padding-left: 10px;
@@ -190,7 +188,6 @@ header h1{
 ============================================================ */
 
 footer{
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
   font-size: 16px;
 }
@@ -204,4 +201,20 @@ footer p{
 
 footer , footer p a{
 	color: #FFF;
+}
+
+/* Pagination
+============================================================ */
+div.pagination{
+  float: right;
+  margin: 20px;
+}
+
+div.pagination a{
+  font-size: 16px;
+  color: #215671;
+}
+
+ .item ul, div.pagination a, footer{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }

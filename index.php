@@ -6,59 +6,30 @@
 		<script type="text/javascript" href="javascripts/main.js"></script>
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="icon" type="image/png" href="images/favicon.png">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script type="text/javascript" src="javascripts/selectivizr.js"></script>
+      <script type="text/javascript" src="javascripts/Modernizr.js"></script>
+      <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+    <![endif]-->
 	</head>
 
 	<body>
 		<header>
 			<div class="wrapper">
-				<h1><a href="test.php"><img src="images/logo.png"></a></h1>
+				<h1><a href="index.php"><img src="images/logo.png"></a></h1>
 			</div>
 		</header>
-
-		<?php
-    //include('libraries/TMDb.php');
-
-    // Inicialize a TMDb Wrapper class with the api key as param
-    //$tmdb = new TMDb('c49ee1c4a4d925055489cad655cf3ea2');
-
-    // First request a token from API
-    //$token = $tmdb->getAuthToken();
-
-     // Request valid session for that particular user from API
-    //$session = $tmdb->getAuthSession();
-
-    //Retrieve config when the class is already initialised from TMDb (always new request)
-    //  $config = $tmdb->getConfiguration();
-
-
-$variable="MI VARIABLE";
-echo $variable;
-
-// $tmdb.searchPerson("vin diesel");
-      //$tmdb.searchPerson($name)
-
-      // $tmdb->getPerson($person_id);
-?>
-
-<?php
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "http://api.themoviedb.org/3/search/person?apy_key=c49ee1c4a4d925055489cad655cf3ea2");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_HEADER, FALSE);
-curl_setopt($ch, CURLOPT_HTTPHEADER, array("Accept: application/json"));
-$response = curl_exec($ch);
-curl_close($ch);
-
-var_dump($response);
-
-
-?>
-
 		<div class = "page-wrap">
 			<div class="floater">
 				<div class="search_content">
-					<input type="text" class="search_textfield">
-					<input type="Submit" class="button" value="" id="search" onclick="location.href='results.php';" >
+					<form action="results.php" method="post" id="form">
+						<input id="search_textfield"type="text" class="search_textfield" name="name" value='Enter a name' onfocus="if (this.value=='Enter a name') this.value = ''" onblur="if(this.value.length==0){this.value='Enter a name';}">
+						<input type="Submit" class="button" value="" id="search" />
+					</form>
 				</div>
 			</div>
 		</div>
@@ -69,3 +40,14 @@ var_dump($response);
 		</footer>
 	</body>
 </html>
+<!-- Basic Validation form-->
+    <script type="text/javascript">
+    $(function() {
+   $('#form').submit(function() {
+        if ($("#search_textfield").get(0).value === "Enter a name" || $("#search_textfield").get(0).value === ""  ) {
+          
+          return false;
+        }
+      });
+  });
+    </script>
